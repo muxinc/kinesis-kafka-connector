@@ -20,6 +20,7 @@
 			<groupId>org.apache.kafka</groupId>
 			<artifactId>connect-api</artifactId>
 			<version>2.5.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.amazonaws</groupId>
@@ -41,6 +42,12 @@
 			<artifactId>testng</artifactId>
 			<version>6.9.10</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.5.1</version>
+			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>
@@ -78,6 +85,7 @@
 									<exclude>com.fasterxml.jackson.dataformat:*</exclude>
 									<exclude>com.fasterxml.jackson.dataformat:*</exclude>
 									<exclude>jackson*:jackson-databind:jar:</exclude>
+									<exclude>com.google.guava:*</exclude>
 								</excludes>
 							</artifactSet>
 						</configuration>
